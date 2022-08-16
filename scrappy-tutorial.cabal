@@ -1,5 +1,5 @@
 cabal-version:      2.4
-name:               wikiScraper
+name:               scrappy-tutorial
 version:            0.1.0.0
 synopsis:
 
@@ -18,7 +18,7 @@ maintainer:         galen.sprout@gmail.com
 -- category:
 extra-source-files: CHANGELOG.md
 
-executable wikiScraper
+executable scrappy-tutorial
     main-is:          Main.hs
 
     -- Modules included in this executable, other than Main.
@@ -28,5 +28,11 @@ executable wikiScraper
     -- other-extensions:
     build-depends:    base ^>=4.14.3.0
                     , scrappy
+                    , http-client-tls
+                    , http-client
+                    , parsec
+                    , text
+                    , csv
+                    , async
     hs-source-dirs:   app
     default-language: Haskell2010
